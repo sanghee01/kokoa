@@ -1,0 +1,83 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0px 5px;
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channels {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channels-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
+.user-component-person {
+  margin-bottom: 20px;
+}
+.user-component-person:first-child .user-component__column:first-child {
+  position: relative;
+}
+
+.user-component__music {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 230px;
+  border: rgb(87, 219, 147) solid 2px;
+  border-radius: 25px;
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  right: 20px;
+}
+.user-component__music-text {
+  padding: 0px 6px;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 3s;
+}
